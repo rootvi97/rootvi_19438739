@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--The heading and Title of the Webpage-->
+<head>
+    <!--Script taken from https://code.jquery.com/ site-->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Rootvi Potfolio </title>
+</head>
+<body>
+    <div class="toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!--This section contains the heading displayed on the webpage-->>
+    <div class="container"> 
+        <div class="header">
+            <div class="navbar">
+                <a href="#">Home</a>
+                <a href="#portofolio">Portofolio</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact Me</a>
+            </div>
+            <!--the home page and image is taken from personal computer-->>
+            <div class="head-content">
+                <img src="/Images/Rootvi-portfolio.png" height="300px" width="300px">
+                <p class="name">Rootvi Pandya</p>
+                <p class="desc">Welcome to my portfolio</p>
+            </div>
+        </div>
+        <div class="portfolio-section" id="Portofolio">
+            <h2><b>Software Engineering Student</b></h2>
+            <p>
+                I am a software engineer student at University of Northampton (UoN).
+                As this is my first year, I am learning to code and develop a portfolio website.
+                I also have other subjects like Software Engineering 1, Databases,Computer Systems, 
+                Computer Communications and Problem solving & programming. 
+            </p>
+        </div>
+        <div class="resume-section" id="resume">
+            <h2>Resume</h2>
+            <div class="profile-info">
+                <h3>Rootvi Pandya</h3>
+                 <p class="about">
+                    I am a  BSC Software Engineering student at Northampton University.<br>
+                    I am a hardworking, determined and reliable individual who can work both independently and as part of a team.<br>
+                    I am currently seeking any  part time jobs which would enhance my skills and build up an experience for me along with developing confidence <br>
+                    and skills which would help me to start my career in industry to gain a successful future.
+                </p>
+                <h4>Skills</h4>
+                <div class="skills">
+                    <ol>
+                        <small>
+                        <li>I know programming languages like C, C++, C# and python.</li>
+                        <li>I can work with Microsoft applications like Word, Excel, Access and Power point.</li>
+                        <li>I can work with CISCO packet tracer in networks.</li>
+                        <li>I am diligent, conscientious, punctual and reliable.
+                        <li>I am keen to learn and develop new skills.</li>
+                    </small>
+                </ol>
+                </div>
+            </div>
+        </div>
+        <div class="contact-section" id="contact">
+            <span>Contact Me</span>
+            <div class="inputs">
+                <input type="text" class="inp-name" placeholder="Name">
+                <input type="text" class="inp-mail" placeholder="Your Email">
+                <textarea rows="10" cols="40" placeholder="Your Message" class="inp-msg"></textarea>
+                <input type="button" class="inp-btn" value="Submit"> 
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Rootvi Web &copy; 2019-2022</p>
+        </div>
+        </div>
+        <div class="footer">
+            <footer>
+                <div class="social-media">
+    <!--the images were taken from https://images.app.goo.gl/DVfNbWv7JTwxBrp37-->
+                    <img src="/Images/whatsapp.jfif">
+    <!--the images were taken from https://images.app.goo.gl/wea9Xe4mfp8jBcZL9-->
+                    <img src="/Images/instagram.jfif">
+    <!--the images were taken from https://images.app.goo.gl/jcVSBNqGQE4HW2qG7-->               
+                    <img src="/Images/github.png">
+                </div>
+            </footer>
+        </div>
+    </div>   
+</body>
+<!--script is to know that the webpage is being resized when in different mode like mobile.-->
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".toggle").click(function(){
+            $(".navbar").slideToggle()
+        });
+        
+        $(window).resize(function(){
+        if($(window).width()>768)
+        {
+            $('.navbar').show();
+        }
+        else
+        {
+            $('.navbar').hide();
+        }
+    });
+});
+</script>
+</html>
